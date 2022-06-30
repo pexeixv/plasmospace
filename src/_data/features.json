@@ -1,0 +1,37 @@
+[
+    {
+        "name": "One Tap Plasma Request",
+        "desc": "",
+        "classes": "fas fa-computer-mouse"
+    },
+    {
+        "name": "Advance Plasma Donor",
+        "desc": "",
+        "classes": "fas fa-magnifying-glass"
+    },
+    {
+        "name": "Request notification",
+        "desc": "",
+        "classes": "fas fa-bell"
+    },
+    {
+        "name": "Simple User Interface",
+        "desc": "",
+        "classes": "fas fa-align-center"
+    },
+    {
+        "name": "Fully Editable Profile",
+        "desc": "",
+        "classes": "fas fa-user-pen"
+    },
+    {
+        "name": "Contact Patient via Phone Call",
+        "desc": "",
+        "classes": "fas fa-phone-flip"
+    },
+    {
+        "name": "Post Request to Nearby Donors",
+        "desc": "",
+        "classes": "fas fa-map-location"
+    }
+]
