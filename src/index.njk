@@ -55,8 +55,8 @@
                 <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10">
                     {% for feature in features %}
                         <div class="flex flex-col items-center bg-yellow-200 p-5 rounded-md shadow-lg">
-                            <i class="{{ feature.classes }} text-5xl"></i>
-                            <h3 class="font-bold text-2xl text-center mt-5">{{ feature.name }}</h3>
+                            <i class="{{ feature.classes }} text-5xl text-red-700"></i>
+                            <h3 class="font-bold text-2xl text-center mt-10">{{ feature.name }}</h3>
                             <p>{{ feature.desc }}</p>
                         </div>
                     {% endfor %}
@@ -69,31 +69,31 @@
                     <span class="text-black">About</span>
                     Plasmospace
                 </h2>
-                <div class="space-y-5 max-w-3xl mx-auto">
-                    <p>
+                <ul class="space-y-5 max-w-3xl mx-auto list-disc">
+                    <li>
                         Plasma Donation system, aims at providing an adequate supply of plasma transfusion and donation centers and hospitals.
                         Plasma is necessary for several treatments and surgeries like cancer, hemophilia, transplant surgery, etc and it's still
                         a limited resource. Plasma donation will play a fundamental role in health care systems, aiming at guaranteeing an
                         adequate plasma availability to meet the demand and save lives.
-                    </p>
-                    <p>For plasma donation the person has to be at least 18 years of age or older and should be at least 50 kilograms. The
+                    </li>
+                    <li>For plasma donation the person has to be at least 18 years of age or older and should be at least 50 kilograms. The
                         person will also have to get a physical examination and get tested for viruses. Donating plasma is different from
                         donating blood. When donating blood, it goes straight to the collection of the bag and then later is separated in the
-                        lab and while donating plasma the blood drawn goes to a machine where all the contents of blood are separated.</p>
-                    <p>
+                        lab and while donating plasma the blood drawn goes to a machine where all the contents of blood are separated.</li>
+                    <li>
                         Plasma can be donated every four weeks. Automated donation allows collection of a larger amount of plasma from one donor
                         at one sitting the whole donation of blood. This is good for donors of type AB since they are universal donors. Plasma
                         requires precaution of collection and storage. Its shelf life is limited from donation to utilization i.e. 1 year and
                         after it's thawed it lasts for about 24 hours to 5 days depending on the product. Hence a plasma donation system is
                         needed, a supply block chain should meet the daily demand of plasma and follow its temporal pattern.
-                    </p>
-                    <p>
+                    </li>
+                    <li>
                         Plasma donation and the related management problems can be classified into: Donor’s registration, plasma collection,
                         plasma screening/evaluation, inventory storage and delivery. It concerns the strategic decisions which are the location
                         of the healthcare center and tactical operation systems like production of multiple products, plasma allocation health
                         care centers and hospitals, control of the inventory levels and delivery.
-                    </p>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="bg-yellow-100">
@@ -102,16 +102,20 @@
                     <span class="text-black">The</span>
                     team
                 </h2>
-                <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-center justify-center justify-items-center">
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-center justify-center justify-items-center">
                     {% for member in members %}
                         <div class="flex flex-col items-center bg-yellow-200 p-5 rounded-md w-fit shadow-lg">
-                            <h3 class="font-bold text-2xl text-center">{{ member.name }}</h3>
+                            <div>
+                                <h3 class="font-bold text-2xl text-center">
+                                    <span class="text-red-700">{{ member.fname }}</span>
+                                    {{ member.lname }}</h3>
+                            </div>
                             <span class="text-lg font-semibold">{{ member.roll }}</span>
                             <a href="tel:91{{ member.phone }}">
                                 <i class="fas fa-phone mr-1"></i>
                                 <span class="underline">{{ member.phone }}</span>
                             </a>
-                            <a href="mailto:{{ member.email }}">
+                            <a href="mailto:{{ member.email }}" class=" hidden md:inline">
                                 <i class="fas fa-envelope mr-1"></i>
                                 <span class="underline">{{ member.email }}</span>
                             </a>
