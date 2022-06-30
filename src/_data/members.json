@@ -1,11 +1,5 @@
 [
     {
-        "name": "Karina Fernandes",
-        "roll": "SU190545",
-        "phone": "7757885218",
-        "email": "kar006@chowgules.ac.in"
-    },
-    {
         "name": "Shania Gracias",
         "roll": "SU190254",
         "phone": "8806587542",
@@ -13,19 +7,25 @@
     },
     {
         "name": "Shivani Sawant",
-        "roll": "SU190545",
+        "roll": "SU190279",
         "phone": "9075062254",
         "email": "shi002@chowgules.ac.in"
     },
     {
         "name": "Blaze Monteiro",
-        "roll": "SU190545",
+        "roll": "SU190329",
         "phone": "7387540263",
         "email": "bla002@chowgules.ac.in"
     },
     {
+        "name": "Karina Fernandes",
+        "roll": "SU190329",
+        "phone": "7757885218",
+        "email": "kar006@chowgules.ac.in"
+    },
+    {
         "name": "Manasi Athalye",
-        "roll": "SU190545",
+        "roll": "SU190190",
         "phone": "8805132170",
         "email": "man007@chowgules.ac.in"
     }
